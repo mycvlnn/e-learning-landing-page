@@ -3,7 +3,10 @@
 }
 
 :root {
-    --primary-color: "#000";
+    --primary-color: #1ebfc1;
+    --text-heading-color: #0d1111;
+    --text-secondary-color: #9da6a5;
+    --width-container: 1170px;
 }
 
 html {
@@ -14,6 +17,8 @@ body {
     font-size: 1.6rem;
     font-family: Poppins, sans-serif;
 }
+
+/* ====================== COMMON ====================== */
 
 .line-number {
     display: -webkit-box;
@@ -29,4 +34,74 @@ body {
 
 .line-clamp-3 {
     --line-clamp: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: var(--width-container);
+    max-width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.btn-outlined {
+    display: inline-block;
+    line-height: 48px;
+    padding: 0 20px;
+    min-width: 100px;
+    border-radius: 6px;
+    color: var(--primary-color);
+    border: 1px solid currentColor;
+    font-weight: 600;
+}
+
+.btn-outlined:hover {
+    opacity: 0.8;
+}
+
+/* ====================== HEADER ====================== */
+
+.header {
+    position: sticky;
+    top: -40px;
+    z-index: 1;
+}
+
+.header .navbar .list,
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .container {
+    padding-top: 52px;
+    padding-bottom: 12px;
+}
+
+.header .actions .sign-in,
+.header .navbar .list .link {
+    font-weight: 400;
+    color: #494949;
+    display: inline-block;
+    padding: 10px 20px;
+    transition: all linear 0.3s;
+}
+
+.header .actions .sign-in:hover,
+.header .navbar .list .link:hover {
+    color: #2f3a3b;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.header .actions .sign-up {
+    margin-left: 18px;
 }
