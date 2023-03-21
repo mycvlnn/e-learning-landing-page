@@ -492,3 +492,128 @@ a {
     line-height: 1.5;
     color: var(--text-desc-color);
 }
+
+/* ====================== TESTIMONIAL SECTION ====================== */
+
+.testimonial {
+    padding: 130px 0;
+    /* background-color: orange; */
+}
+
+.feedback-list {
+    display: flex;
+    overflow: hidden;
+}
+
+.feedback-item {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.testimonial .content {
+    flex: 1;
+    margin-right: 72px;
+}
+
+.testimonial .content blockquote {
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 1.5;
+    color: #5d6564;
+    margin-top: 25px;
+}
+
+.testimonial .content .author {
+    margin-top: 33px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #070707;
+}
+
+.testimonial .content .author span {
+    font-weight: 400;
+    color: var(--text-desc-color);
+}
+
+.testimonial .content .controls {
+    margin-top: 52px;
+}
+
+.testimonial .content .controls .ctr-btn {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    background: var(--primary-color);
+    border-radius: 999px;
+    border: none;
+}
+
+.testimonial .content .controls .ctr-btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.testimonial .content .controls .ctr-btn .icon {
+    margin: auto;
+}
+
+.testimonial .content .controls .ctr-btn + .ctr-btn {
+    margin-left: 30px;
+}
+
+.testimonial .media-block {
+    width: 679px;
+    height: 481px;
+    position: relative;
+}
+
+.testimonial .media-block .avatar {
+    position: absolute;
+    width: 78px;
+    height: 78px;
+    border-radius: 999px;
+    object-fit: cover;
+    object-position: center;
+    background-color: #ffc147;
+}
+
+.testimonial .media-block .avatar:nth-child(1) {
+    left: 0;
+    bottom: 145px;
+}
+
+.testimonial .media-block .avatar:nth-child(2) {
+    bottom: 0;
+    left: 212px;
+    background-color: #ff947a;
+}
+
+.testimonial .media-block .avatar:nth-child(3) {
+    bottom: 29px;
+    right: 32px;
+    background: #b1dfdc;
+}
+
+.testimonial .media-block .avatar:nth-child(4) {
+    width: 110px;
+    height: 110px;
+    background: #bf83ff;
+    right: 0;
+    top: 19px;
+}
+
+.testimonial .media-block .avatar:nth-child(5) {
+    width: 92px;
+    height: 92px;
+    top: 0;
+    left: 144px;
+    background: #1ebfc1;
+}
+
+.testimonial .media-block .avatar:nth-child(6) {
+    width: 235px;
+    height: 235px;
+    left: 237px;
+    top: 107px;
+    background-color: #ff8282;
+}
