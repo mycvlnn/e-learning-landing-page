@@ -380,6 +380,7 @@ a {
 
 .courses-popular .course-list .item {
     flex: 1;
+    height: 517px;
     position: relative;
 }
 
@@ -406,7 +407,7 @@ a {
     position: absolute;
     left: 17px;
     right: 17px;
-    top: 322px;
+    bottom: 0;
     background: #ffffff;
     border-radius: 8px;
     padding: 18px 25px 29px;
@@ -464,4 +465,30 @@ a {
     border-radius: 999px;
     background-color: var(--primary-color);
     margin-right: 10px;
+}
+
+/* ====================== STATS SECTION ====================== */
+
+.stats {
+    padding: 135px 0;
+}
+
+.stats .stat-item {
+    flex: 1;
+    text-align: center;
+}
+
+.stats .stat-item .number {
+    font-weight: 700;
+    font-size: 6.2rem;
+    line-height: 1.5;
+    color: var(--text-heading-color);
+}
+
+.stats .stat-item .desc {
+    margin-top: 11px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: var(--text-desc-color);
 }
