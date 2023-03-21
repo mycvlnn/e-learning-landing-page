@@ -6,6 +6,7 @@
     --primary-color: #1ebfc1;
     --text-heading-color: #0d1111;
     --text-secondary-color: #9da6a5;
+    --text-desc-color: #767e7e;
     --width-container: 1170px;
 }
 
@@ -97,6 +98,14 @@ a {
     color: var(--text-heading-color);
 }
 
+.sub-title {
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--text-desc-color);
+}
+
 .sub-title + .heading {
     margin-top: 18px;
 }
@@ -150,13 +159,6 @@ a {
 .hero .container > .info {
     flex: 1;
     padding-right: 71px;
-}
-
-.hero .info .sub-title {
-    font-weight: 400;
-    font-size: 1.4rem;
-    line-height: 1.5;
-    color: #767e7e;
 }
 
 .hero .info .desc {
@@ -281,14 +283,6 @@ a {
     width: 1024px;
 }
 
-.features .sub-title {
-    text-transform: uppercase;
-    letter-spacing: 8px;
-    font-weight: 700;
-    font-size: 1.2rem;
-    color: #767e7e;
-}
-
 .features .heading {
     max-width: 577px;
 }
@@ -299,7 +293,7 @@ a {
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 1.5;
-    color: #767e7e;
+    color: var(--text-desc-color);
 }
 
 .features .list {
@@ -352,4 +346,122 @@ a {
 
 .features .list .item:nth-child(3) .desc {
     max-width: 224px;
+}
+
+/* ====================== COURSES POPULAR ====================== */
+
+.courses-popular {
+    padding: 130px 0;
+}
+
+.courses-popular .container > .info .desc {
+    margin-top: 19px;
+    width: 525px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.78;
+    color: var(--text-desc-color);
+}
+
+.courses-popular .view-all {
+    margin-left: auto;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    text-decoration-line: underline;
+    color: var(--primary-color);
+}
+
+.courses-popular .course-list {
+    margin-top: 79px;
+    display: flex;
+    gap: 0 47px;
+}
+
+.courses-popular .course-list .item {
+    flex: 1;
+    position: relative;
+}
+
+.courses-popular .course-list .item:hover .thumb {
+    opacity: 1;
+}
+
+.courses-popular .course-list .item:hover .info {
+    box-shadow: 0px 16px 90px rgba(0, 0, 0, 0.05);
+}
+
+.courses-popular .course-list .item .thumb {
+    width: 100%;
+    height: 393px;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.5;
+    border-radius: 8px;
+    background: #d0efed;
+    transition: 0.3s linear all;
+}
+
+.courses-popular .course-list .item .info {
+    position: absolute;
+    left: 17px;
+    right: 17px;
+    top: 322px;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 18px 25px 29px;
+    transition: 0.3s linear all;
+}
+
+.courses-popular .course-list .title a {
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 1.5;
+    color: var(--text-heading-color);
+}
+
+.course-list .info .fee {
+    margin-top: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--text-desc-color);
+}
+
+.course-list .info .fee strong {
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.course-list .info .desc {
+    margin-top: 6px;
+}
+
+.course-list .info .foot {
+    margin-top: 18px;
+}
+
+.course-list .info .desc,
+.course-list .info .foot span {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: var(--text-secondary-color);
+}
+
+.course-list .info .foot span {
+    display: flex;
+    align-items: center;
+}
+
+.course-list .info .foot span + span {
+    margin-left: 10px;
+}
+
+.course-list .info .foot span::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background-color: var(--primary-color);
+    margin-right: 10px;
 }
