@@ -497,7 +497,6 @@ a {
 
 .testimonial {
     padding: 130px 0;
-    /* background-color: orange; */
 }
 
 .feedback-list {
@@ -616,4 +615,32 @@ a {
     left: 237px;
     top: 107px;
     background-color: #ff8282;
+}
+
+/* ====================== CTA SECTION ====================== */
+
+.cta-section {
+    padding: 76px 0 88px;
+    background-color: #def6f5;
+}
+
+.cta-section .action,
+.cta-section .info {
+    flex: 1;
+}
+
+.cta-section .info .desc {
+    margin-top: 18px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: var(--text-desc-color);
+}
+
+.cta-section .action {
+    display: flex;
+}
+
+.cta-section .action .btn {
+    margin: auto;
 }
