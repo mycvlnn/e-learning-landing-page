@@ -62,20 +62,39 @@
     <body>
         <!-- Header section -->
         <header class="header">
-            <div class="container">
+            <div class="container large">
                 <a href="#" class="logo">
                     <img src="./assets/icon/logo.svg" alt="Besnik" />
                 </a>
+
+                <!-- Top Search -->
+                <div class="top-search">
+                    <input
+                        id="top-search"
+                        type="text"
+                        class="top-search__input"
+                        placeholder="Search..."
+                    />
+                    <label for="top-search" class="top-search__slot">
+                        <img
+                            src="./assets/icon/search.svg"
+                            alt="search-icon"
+                            class="top-search__icon"
+                        />
+                    </label>
+                </div>
+
+                <!-- Navbar  -->
                 <nav class="navbar">
                     <ul class="list">
-                        <li class="item">
-                            <a href="#!" class="link">Home</a>
+                        <li class="item active">
+                            <a href="#" class="link">Home</a>
                         </li>
                         <li class="item">
                             <a href="#!" class="link">Features</a>
                         </li>
                         <li class="item">
-                            <a href="#!" class="link">Pricing</a>
+                            <a href="#courses" class="link">Courses</a>
                         </li>
                         <li class="item">
                             <a href="#!" class="link">About</a>
@@ -86,7 +105,164 @@
                     </ul>
                 </nav>
 
-                <div class="actions row">
+                <div class="actions">
+                    <!-- Cart -->
+                    <div class="cart">
+                        <span class="cart__badge">4</span>
+                        <img src="./assets/icon/cart.svg" alt="cart-icon" class="cart__icon" />
+
+                        <!-- Popup cart -->
+                        <div class="cart__popper">
+                            <!-- Cart list -->
+                            <div class="cart-list">
+                                <!-- Cart item 1 -->
+                                <a href="#!" class="cart-item">
+                                    <img
+                                        src="./assets/img/cart-item-1.png"
+                                        alt="Awesome for Websites"
+                                        class="cart-item__img"
+                                    />
+                                    <div class="cart-item__content">
+                                        <h3 class="cart-item__name line-number line-clamp-1">
+                                            Awesome for Websites
+                                        </h3>
+                                        <div class="cart-item__pricing row">
+                                            <span class="cart-item__quantity">1 x </span>
+                                            <b class="cart-item__price">$49.00</b>
+                                        </div>
+                                    </div>
+                                    <button class="cart-item__clear">
+                                        <svg
+                                            class="cart-item__clear-icon"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="12"
+                                            height="12"
+                                            viewBox="0 0 12 12"
+                                            fill="none"
+                                        >
+                                            <g clip-path="url(#clip0_121_270)">
+                                                <path
+                                                    d="M7.09936 6.00975L11.772 1.33703C12.0761 1.03309 12.0761 0.541635 11.772 0.237725C11.4681 -0.0662209 10.9766 -0.0662209 10.6727 0.237725L5.99995 4.9104L1.32738 0.237725C1.02328 -0.0662209 0.532015 -0.0662209 0.228069 0.237725C-0.0760229 0.541671 -0.0760229 1.03309 0.228069 1.33703L4.9006 6.00975L0.228105 10.6824C-0.0759865 10.9864 -0.0759865 11.4778 0.228105 11.7817C0.300203 11.854 0.385876 11.9114 0.480204 11.9505C0.574531 11.9896 0.675653 12.0096 0.777759 12.0095C0.976745 12.0095 1.1758 11.9333 1.32741 11.7817L5.99995 7.10906L10.6727 11.7817C10.7448 11.854 10.8305 11.9114 10.9248 11.9505C11.0191 11.9895 11.1202 12.0096 11.2224 12.0095C11.4213 12.0095 11.6204 11.9333 11.772 11.7817C12.0761 11.4778 12.0761 10.9864 11.772 10.6824L7.09936 6.00975Z"
+                                                    fill="currentColor"
+                                                />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_121_270">
+                                                    <rect width="12" height="12" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <!-- <img
+                                            src="./assets/icon/clear.svg"
+                                            alt="clear icon"
+                                            class="cart-item__clear-icon"
+                                        /> -->
+                                    </button>
+                                </a>
+
+                                <!-- Cart item 2 -->
+                                <a href="#!" class="cart-item">
+                                    <img
+                                        src="./assets/img/cart-item-2.png"
+                                        alt="Successful Negotiati"
+                                        class="cart-item__img"
+                                    />
+                                    <div class="cart-item__content">
+                                        <h3 class="cart-item__name line-number line-clamp-1">
+                                            Successful Negotiation: Master Your Negotiating Skills
+                                        </h3>
+                                        <div class="cart-item__pricing row">
+                                            <span class="cart-item__quantity">1 x </span>
+                                            <b class="cart-item__price">$42.00</b>
+                                        </div>
+                                    </div>
+                                    <!-- Clear icon -->
+                                    <button class="cart-item__clear">
+                                        <svg
+                                            class="cart-item__clear-icon"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="12"
+                                            height="12"
+                                            viewBox="0 0 12 12"
+                                            fill="none"
+                                        >
+                                            <g clip-path="url(#clip0_121_270)">
+                                                <path
+                                                    d="M7.09936 6.00975L11.772 1.33703C12.0761 1.03309 12.0761 0.541635 11.772 0.237725C11.4681 -0.0662209 10.9766 -0.0662209 10.6727 0.237725L5.99995 4.9104L1.32738 0.237725C1.02328 -0.0662209 0.532015 -0.0662209 0.228069 0.237725C-0.0760229 0.541671 -0.0760229 1.03309 0.228069 1.33703L4.9006 6.00975L0.228105 10.6824C-0.0759865 10.9864 -0.0759865 11.4778 0.228105 11.7817C0.300203 11.854 0.385876 11.9114 0.480204 11.9505C0.574531 11.9896 0.675653 12.0096 0.777759 12.0095C0.976745 12.0095 1.1758 11.9333 1.32741 11.7817L5.99995 7.10906L10.6727 11.7817C10.7448 11.854 10.8305 11.9114 10.9248 11.9505C11.0191 11.9895 11.1202 12.0096 11.2224 12.0095C11.4213 12.0095 11.6204 11.9333 11.772 11.7817C12.0761 11.4778 12.0761 10.9864 11.772 10.6824L7.09936 6.00975Z"
+                                                    fill="currentColor"
+                                                />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_121_270">
+                                                    <rect width="12" height="12" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                </a>
+
+                                <!-- Cart item 3 -->
+                                <a href="#!" class="cart-item">
+                                    <img
+                                        src="./assets/img/cart-item-3.png"
+                                        alt="Consulting Approach to Problem Solving"
+                                        class="cart-item__img"
+                                    />
+                                    <div class="cart-item__content">
+                                        <h3 class="cart-item__name line-number line-clamp-1">
+                                            Consulting Approach to Problem Solving
+                                        </h3>
+                                        <div class="cart-item__pricing row">
+                                            <span class="cart-item__quantity">1 x </span>
+                                            <b class="cart-item__price">$60.00</b>
+                                        </div>
+                                    </div>
+                                    <!-- Clear icon -->
+                                    <button class="cart-item__clear">
+                                        <svg
+                                            class="cart-item__clear-icon"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="12"
+                                            height="12"
+                                            viewBox="0 0 12 12"
+                                            fill="none"
+                                        >
+                                            <g clip-path="url(#clip0_121_270)">
+                                                <path
+                                                    d="M7.09936 6.00975L11.772 1.33703C12.0761 1.03309 12.0761 0.541635 11.772 0.237725C11.4681 -0.0662209 10.9766 -0.0662209 10.6727 0.237725L5.99995 4.9104L1.32738 0.237725C1.02328 -0.0662209 0.532015 -0.0662209 0.228069 0.237725C-0.0760229 0.541671 -0.0760229 1.03309 0.228069 1.33703L4.9006 6.00975L0.228105 10.6824C-0.0759865 10.9864 -0.0759865 11.4778 0.228105 11.7817C0.300203 11.854 0.385876 11.9114 0.480204 11.9505C0.574531 11.9896 0.675653 12.0096 0.777759 12.0095C0.976745 12.0095 1.1758 11.9333 1.32741 11.7817L5.99995 7.10906L10.6727 11.7817C10.7448 11.854 10.8305 11.9114 10.9248 11.9505C11.0191 11.9895 11.1202 12.0096 11.2224 12.0095C11.4213 12.0095 11.6204 11.9333 11.772 11.7817C12.0761 11.4778 12.0761 10.9864 11.772 10.6824L7.09936 6.00975Z"
+                                                    fill="currentColor"
+                                                />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_121_270">
+                                                    <rect width="12" height="12" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                </a>
+                            </div>
+
+                            <!-- Cart footer -->
+                            <div class="cart-footer">
+                                <div class="cart-total">
+                                    <span class="cart-total__label">Total:</span>
+                                    <b class="cart-total__money">$455.99</b>
+                                </div>
+
+                                <div class="cart-actions">
+                                    <button class="cart-actions__btn">View cart</button>
+                                    <button class="cart-actions__btn cart-actions__btn--primary">
+                                        Checkout
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <!-- Authen -->
                     <a href="#!" class="sign-in">Sign in</a>
                     <a href="#!" class="sign-up btn-outlined">Sign up</a>
                 </div>
@@ -204,7 +380,7 @@
             </div>
 
             <!-- Popular Courses -->
-            <div class="courses-popular">
+            <div class="courses-popular" id="courses">
                 <div class="container">
                     <div class="info">
                         <p class="sub-title">Courses</p>
