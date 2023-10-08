@@ -1,0 +1,39 @@
+/* CSS cho breadcrumb */
+.breadcrumb-section {
+    margin-top: 45px;
+}
+
+.breadcrumb {
+    display: flex;
+}
+
+.breadcrumb__item {
+    font-size: 1.4rem;
+    color: rgba(47, 58, 59, 0.7);
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.breadcrumb__item:hover {
+    color: var(--primary-color);
+}
+
+.breadcrumb__link {
+    font-family: Montserrat;
+    font-size: inherit;
+    color: inherit;
+    font-weight: inherit;
+}
+
+.breadcrumb__item + .breadcrumb__item::before {
+    content: "/";
+    font-size: inherit;
+    margin: 0 4px;
+}
+
+.breadcrumb__item--active {
+    color: #2f3a3b;
+    font-weight: 500;
+}
