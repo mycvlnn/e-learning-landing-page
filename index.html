@@ -57,7 +57,10 @@
         <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
 
         <!-- css -->
+        <link rel="stylesheet" href="./assets/css/base.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/modal.css" />
+        <link rel="stylesheet" href="./assets/css/form.css" />
     </head>
     <body>
         <!-- Header section -->
@@ -263,8 +266,8 @@
                     <div class="divider"></div>
 
                     <!-- Authen -->
-                    <a href="#!" class="sign-in">Sign in</a>
-                    <a href="#!" class="sign-up btn-outlined">Sign up</a>
+                    <a href="#!" class="sign-in" id="loginBtn">Sign in</a>
+                    <a href="#!" class="sign-up btn-outlined" id="signupBtn">Sign up</a>
                 </div>
             </div>
         </header>
@@ -671,5 +674,224 @@
                 <p class="copyright">© Copyright 2020 by Mayad Ahmed. All right reserved.</p>
             </div>
         </footer>
+
+        <!-- Modal -->
+        <!-- Login -->
+        <div id="login" class="modal login">
+            <div class="modal-content login__content">
+                <button id="closeModalBtn" class="close login__close">
+                    <img src="./assets/icon/close.svg" alt="close btn" />
+                </button>
+                <form class="login__form">
+                    <h2 class="form-title">Log In</h2>
+                    <p class="form-desc login__desc">
+                        Don’t have an account yet?
+                        <a href="#!" class="form-link">Sign up for free</a>
+                    </p>
+
+                    <div class="form-group">
+                        <label for="username-email" class="form-label">USERNAME OR EMAIL</label>
+                        <div class="form-control">
+                            <input
+                                id="username-email"
+                                type="text"
+                                class="form-input"
+                                placeholder="Your username or email"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="form-group mt-24">
+                        <label for="password" class="form-label">PASSWORD</label>
+                        <div class="form-control">
+                            <input
+                                id="password"
+                                type="password"
+                                class="form-input"
+                                placeholder="Password"
+                            />
+                            <div class="form-input__slot">
+                                <button class="form-group__btn">
+                                    <img
+                                        src="./assets/icon/eye.svg"
+                                        alt="eye"
+                                        class="form-input__icon"
+                                    />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row login__row mt-24">
+                        <div class="form-checkbox row">
+                            <input
+                                type="checkbox"
+                                name="save-account"
+                                id="remember-me"
+                                class="form-checkbox__control"
+                            />
+                            <label for="remember-me" class="form-checkbox__label">
+                                Remember me
+                            </label>
+                        </div>
+
+                        <a href="#!" class="forgot-password">Forgot your password?</a>
+                    </div>
+
+                    <button type="submit" class="submit-form-btn">Log in</button>
+                    <p class="login__with">or Log-in with</p>
+
+                    <div class="authen-platform row">
+                        <button class="authen-platform__btn row">
+                            <img
+                                src="./assets/icon/facebook-icon.svg"
+                                alt="facebook"
+                                class="authen-platform__icon"
+                            />
+                            <b class="authen-platform__name">Facebook</b>
+                        </button>
+
+                        <button class="authen-platform__btn row">
+                            <img
+                                src="./assets/icon/google.svg"
+                                alt="facebook"
+                                class="authen-platform__icon"
+                            />
+                            <b class="authen-platform__name">Google</b>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Sign up -->
+
+        <div id="signup" class="modal signup">
+            <div class="modal-content signup__content">
+                <button id="closeModalSignupBtn" class="close">
+                    <img src="./assets/icon/close.svg" alt="close btn" />
+                </button>
+                <form class="login__form">
+                    <h2 class="form-title">Sign up</h2>
+                    <p class="form-desc signup__desc">
+                        Already have an account?
+                        <a href="#!" class="form-link">Log in</a>
+                    </p>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name" class="form-label">FIRST NAME</label>
+                            <div class="form-control">
+                                <input
+                                    id="first-name"
+                                    type="text"
+                                    class="form-input"
+                                    placeholder="First name"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="last-name" class="form-label">LAST NAME</label>
+                            <div class="form-control">
+                                <input
+                                    id="last-name"
+                                    type="text"
+                                    class="form-input"
+                                    placeholder="Last name"
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="user-name" class="form-label">USERNAME</label>
+                            <div class="form-control">
+                                <input
+                                    id="user-name"
+                                    type="text"
+                                    class="form-input"
+                                    placeholder="Username"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">EMAIL</label>
+                            <div class="form-control">
+                                <input
+                                    id="email"
+                                    type="email"
+                                    class="form-input"
+                                    placeholder="Your email"
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="password" class="form-label">PASSWORD</label>
+                            <div class="form-control">
+                                <input
+                                    id="password"
+                                    type="password"
+                                    class="form-input"
+                                    placeholder="Password"
+                                />
+                                <div class="form-input__slot">
+                                    <button class="form-group__btn">
+                                        <img
+                                            src="./assets/icon/eye.svg"
+                                            alt="eye"
+                                            class="form-input__icon"
+                                        />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password-confirmation" class="form-label">
+                                RE-ENTER PASSWORD
+                            </label>
+                            <div class="form-control">
+                                <input
+                                    id="password-confirmation"
+                                    type="password"
+                                    class="form-input"
+                                    placeholder="Re-Enter Password"
+                                />
+                                <div class="form-input__slot">
+                                    <button class="form-group__btn">
+                                        <img
+                                            src="./assets/icon/eye.svg"
+                                            alt="eye"
+                                            class="form-input__icon"
+                                        />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-checkbox row signup__policy">
+                        <input
+                            type="checkbox"
+                            name="save-account"
+                            id="accept-privacy"
+                            class="form-checkbox__control"
+                        />
+                        <label for="accept-privacy" class="form-checkbox__label">
+                            Accept the Terms and Privacy Policy
+                        </label>
+                    </div>
+
+                    <button type="submit" class="submit-form-btn">Register</button>
+                </form>
+            </div>
+        </div>
+        <script src="./script.js"></script>
     </body>
 </html>
