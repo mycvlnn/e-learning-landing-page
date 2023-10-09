@@ -41,7 +41,7 @@ body {
 }
 
 .line-clamp-3 {
-    --line-clamp: 1;
+    --line-clamp: 3;
 }
 
 a {
