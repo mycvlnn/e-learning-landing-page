@@ -46,29 +46,55 @@
 
 .feature__list-row {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    column-gap: 104px;
+}
+
+.features__list-col {
+    flex: 1;
+}
+
+.features-item {
+    display: flex;
 }
 
 .features-item + .features-item {
-    margin-top: 16px;
+    margin-top: 36px;
 }
 
 .features-item__link {
     display: flex;
     align-items: center;
-    color: #9b9b9b;
-    font-family: Montserrat;
-    font-size: 1.5rem;
-    font-weight: 600;
-    line-height: 1.73;
-    letter-spacing: 0.45px;
-    column-gap: 12px;
-    transition: 0.3s;
-    white-space: nowrap;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: var(--bg-color, #ccc);
+    flex-shrink: 0;
+    border-radius: 10px;
 }
 
-.features-item__link:hover {
-    color: var(--primary-color);
+.features-item__content {
+    margin-left: 20px;
+}
+
+.features-item__name {
+    color: var(--xm-ch-chnh, #2f3a3b);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.4; /* 140% */
+    letter-spacing: 0.4px;
+}
+
+.features-item__desc {
+    margin-top: 8px;
+    color: var(--xm-ch-ph, #9b9b9b);
+    font-family: Montserrat;
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.41; /* 141.176% */
+    letter-spacing: 0.34px;
 }
 
 /* Features CTA */
@@ -117,7 +143,7 @@
 }
 
 .features__cta-btn:hover {
-    opacity: 0.8;
+    background-color: var(--primary-color);
 }
 
 .features__wave {
