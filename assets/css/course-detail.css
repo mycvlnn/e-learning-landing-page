@@ -1,0 +1,712 @@
+/* Course detail css */
+
+/* Common */
+
+.detail-course-heading {
+    color: var(--xm-ch-chnh, #2f3a3b);
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/* ---- */
+
+.breadcrumb-couse-detail {
+    background: #f5f7fd;
+    padding-top: 20px;
+    margin-top: 28px;
+}
+
+.breadcrumb-section {
+    margin-top: 0;
+}
+
+.summary {
+    background-color: #f5f7fd;
+    padding: 68px 0;
+}
+
+.summary__discount {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.summary__discount-value {
+    display: flex;
+    width: 52px;
+    height: 22px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 2px;
+    background: var(--xanh, #2ac9bf);
+
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.summary__discount-text {
+    color: var(--xanh, #2ac9bf);
+    font-family: Montserrat;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.summary__name {
+    margin-top: 24px;
+    color: var(--xm-ch-chnh, #2f3a3b);
+    font-family: Montserrat;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5; /* 150% */
+    max-width: 413px;
+}
+
+.summary__author,
+.summary__row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.summary__row {
+    margin-top: 8px;
+}
+
+.summary__author-avatar {
+    width: 36px;
+    height: 36px;
+    fill: #d9d9d9;
+    stroke-width: 1px;
+    stroke: #fff;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.summary__author-name {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.57; /* 257.143% */
+    border-right: 1px solid rgba(47, 58, 59, 0.3);
+    padding-right: 12px;
+}
+
+.summary__update-at {
+    color: var(--xm-ch-chnh, #2f3a3b);
+    font-family: Montserrat;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.57; /* 257.143% */
+}
+
+.summary__rating {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.summary__rating-percent {
+    color: var(--xm-ch-chnh, #2f3a3b);
+    font-family: Montserrat;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.57;
+}
+
+.summary__rating-percent span {
+    font-weight: 600;
+}
+
+.summary__rating-stars {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+}
+
+.summary__rating-star-number {
+    color: var(--xm-ch-chnh, #2f3a3b);
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3; /* 300% */
+}
+
+.summary__rating-divider {
+    width: 1px;
+    height: 36px;
+    background: rgba(47, 58, 59, 0.3);
+}
+
+.summary__enrolled {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.summary__enrolled-number {
+    color: var(--xm-ch-chnh, #2f3a3b);
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3; /* 300% */
+}
+
+/* Course detail */
+.course-detail {
+    padding-top: 54px;
+    padding-bottom: 108px;
+}
+
+.course-detail__row {
+    display: flex;
+}
+
+.course-detail__col-left {
+    width: 72.5%;
+    padding-right: 80px;
+    flex-shrink: 0;
+}
+
+.course-detail__col-right {
+    width: calc(100% - 72.5%);
+}
+
+/* Course Prerequisites */
+
+.prerequisites__title {
+    line-height: 1.8; /* 180% */
+}
+
+.prerequisites__warning {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    padding: 16px 24px;
+    align-items: center;
+    gap: 12px;
+
+    border-radius: 6px;
+    border: 1px solid #f7e5b9;
+    background: #fffff5;
+}
+
+.prerequisites__warning-desc {
+    color: #b39f70;
+    font-family: Montserrat;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.57; /* 157.143% */
+}
+
+.prerequisites__courses {
+    margin-top: 28px;
+}
+
+.prerequisites__course-item + .prerequisites__course-item {
+    margin-top: 18px;
+}
+
+.prerequisites__course-item-link {
+    display: flex;
+    padding: 16px 20px;
+    align-items: center;
+    gap: 12px;
+    border-radius: 6px;
+    border: 1px solid rgba(155, 155, 155, 0.3);
+}
+
+.prerequisites__course-item-img {
+    width: 70px;
+    aspect-ratio: 70/46;
+    flex-shrink: 0;
+    border-radius: 4px;
+}
+
+.prerequisites__course-item-name {
+    color: var(--xanh, #2ac9bf);
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.06; /* 306.667% */
+}
+
+/* About section */
+.about {
+    margin-top: 40px;
+}
+
+.about__title {
+    line-height: 2.3; /* 230% */
+}
+
+.about__tag-title,
+.about__desc {
+    color: var(--xm-ch-chnh, #2f3a3b);
+    font-family: Montserrat;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.7; /* 171.429% */
+}
+
+.about__desc + .about__desc {
+    margin-top: 12px;
+}
+
+.about__tags {
+    margin-top: 20px;
+}
+
+.about__tag-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Objectives */
+
+.objectives {
+    margin-top: 40px;
+    padding: 28px 16px;
+    border-radius: 6px;
+    border: 1px solid rgba(155, 155, 155, 0.3);
+}
+
+.objectives__title {
+    line-height: 1.2; /* 120% */
+}
+
+.objectives__list {
+    margin-top: 16px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-flow: column;
+    column-gap: 120px;
+    row-gap: 16px;
+}
+
+.objectives-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.objectives-item__icon {
+    display: flex;
+    width: 21px;
+    height: 21px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid rgba(155, 155, 155, 0.3);
+}
+
+.objectives-item__title {
+    flex: 1;
+    color: var(--xm-ch-chnh, #2f3a3b);
+    font-family: Montserrat;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.57; /* 157.143% */
+}
+
+/* Requirement, Target Audience section */
+.target-audience,
+.requirements {
+    margin-top: 40px;
+}
+
+.target-audience__title,
+.requirements__title {
+    line-height: 1.2;
+}
+
+.target-audience-item,
+.requirements-item {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.target-audience-item__title,
+.requirements-item__title {
+    color: var(--xm-ch-chnh, #2f3a3b);
+    font-family: Montserrat;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.57; /* 157.143% */
+}
+
+/* Target audience */
+.target-audience {
+    padding-bottom: 28px;
+    border-bottom: 1px solid rgba(155, 155, 155, 0.3);
+}
+
+/* Curriculum */
+.curriculum {
+    margin-top: 40px;
+}
+
+.curriculum__title {
+    line-height: 1.2;
+}
+
+.curriculum__head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.curriculum__overall {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+
+    color: var(--xm-ch-chnh, #2f3a3b);
+    font-family: Montserrat;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.71; /* 171.429% */
+}
+
+.curriculum__overall-time {
+    font-weight: 400;
+}
+
+.curriculum__body {
+    margin-top: 28px;
+}
+
+.curriculum__chapter {
+    border-radius: 6px;
+    border: 1px solid rgba(155, 155, 155, 0.3);
+    display: block;
+    padding: 20px 0;
+}
+
+.curriculum__chapter + .curriculum__chapter {
+    margin-top: 16px;
+}
+
+.curriculum__chapter-head {
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    column-gap: 12px;
+}
+
+.curriculum__chapter-icon-plus {
+    display: none;
+}
+
+.curriculum__chapter-title {
+    color: var(--primary-color);
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.6; /* 160% */
+    user-select: none;
+    text-transform: capitalize;
+}
+
+.curriculum__chapter-body {
+    margin-top: 16px;
+    display: none;
+}
+
+.curriculum__chapter-checkbox:checked ~ .curriculum__chapter-body {
+    display: block;
+    animation: expandMenu 0.3s;
+    transform-origin: top;
+}
+
+@keyframes expandMenu {
+    from {
+        transform: scaleY(0);
+    }
+
+    to {
+        transform: scaleY(1);
+    }
+}
+
+.curriculum__chapter-checkbox:checked ~ .curriculum__chapter-head .curriculum__chapter-icon-minus {
+    display: none;
+}
+
+.curriculum__chapter-checkbox:checked ~ .curriculum__chapter-head .curriculum__chapter-icon-plus {
+    display: flex;
+}
+
+.curriculum__course-link {
+    display: flex;
+    padding: 10px 24px;
+    align-items: center;
+    gap: 8px;
+    transition: 0.2s;
+}
+
+.curriculum__course-name {
+    color: var(--xm-ch-chnh, #2f3a3b);
+    font-family: Montserrat;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71; /* 171.429% */
+    text-transform: capitalize;
+}
+
+.curriculum__course-link:hover {
+    background: #f8f8f8;
+}
+
+/* Introductor */
+.introductor {
+    margin-top: 40px;
+}
+
+.introductor__title {
+    line-height: 1.2; /* 120% */
+}
+
+.introductor__profile {
+    margin-top: 16px;
+    display: flex;
+    column-gap: 28px;
+}
+
+.introductor__avatar {
+    width: 200px;
+    aspect-ratio: 200/245;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.introductor__name {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.introductor__list,
+.introductor__item,
+.introductor__stars,
+.introductor__ratings {
+    display: flex;
+    align-items: center;
+}
+
+.introductor__ratings {
+    margin: 12px 0;
+    column-gap: 16px;
+}
+
+.introductor__stars {
+    column-gap: 4px;
+}
+
+.introductor__rate {
+    color: var(--xm-ch-chnh, #2f3a3b);
+    font-family: Montserrat;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.introductor__rate strong {
+    font-weight: 600;
+}
+
+.introductor__list {
+    column-gap: 16px;
+}
+
+.introductor__item {
+    column-gap: 8px;
+}
+
+.introductor__item-text {
+    color: var(--xm-ch-chnh, #2f3a3b);
+    font-family: Montserrat;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.introductor__link {
+    margin-top: 20px;
+    display: inline-flex;
+    column-gap: 12px;
+    color: var(--primary-color);
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.6; /* 160% */
+}
+
+/* Feeback */
+
+.feedback {
+    margin-top: 40px;
+}
+
+.feedback__title {
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.feedback__row {
+    display: flex;
+    align-items: center;
+}
+
+.feedback__stars {
+    flex-shrink: 0;
+    display: flex;
+    gap: 4px;
+}
+
+.feedback__star {
+    width: 16px;
+    height: 16px;
+}
+
+.feedback__row + .feedback__row {
+    margin-top: 16px;
+}
+
+.feedback__progress {
+    height: 6px;
+    flex: 1;
+    border-radius: 3px;
+    background: #eee;
+    margin: 0 28px;
+}
+
+.feedback__progress-curr {
+    width: var(--percent);
+    height: inherit;
+    border-radius: inherit;
+    background-color: var(--primary-color);
+}
+
+.feedback__rate {
+    min-width: 26px;
+    text-align: right;
+    color: rgba(47, 58, 59, 0.7);
+    font-family: Montserrat;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* Review section */
+
+.reviews__title {
+    margin-top: 40px;
+}
+
+.reviews__title span {
+    color: rgba(47, 58, 59, 0.7);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.reviews-item {
+    padding: 24px 0;
+    border-bottom: 1px solid rgba(155, 155, 155, 0.3);
+}
+
+.reviews-item__row {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.reviews-item__img {
+    width: 52px;
+    height: 52px;
+    border-radius: 100%;
+}
+
+.reviews-item__comment,
+.reviews-item__time,
+.reviews-item__name {
+    color: var(--xm-ch-chnh, #2f3a3b);
+    font-family: Montserrat;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.reviews-item__time {
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+.reviews-item__ratings {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+}
+
+.reviews-item__star {
+    width: 16px;
+    height: 16px;
+}
+
+.reviews-item__comment {
+    font-weight: 400;
+}
+
+.reviews__btn {
+    margin-top: 16px;
+    display: flex;
+    min-width: 180px;
+    padding: 14px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background: var(--primary-color);
+
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.6; /* 160% */
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reviews__btn:hover {
+    background: var(--cam, #ffc221);
+    color: var(--xm-ch-chnh, #2f3a3b);
+}
