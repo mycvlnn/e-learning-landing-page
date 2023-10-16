@@ -1,0 +1,126 @@
+/* Contact CSS */
+
+.contact__heading {
+    margin-top: 63px;
+    color: #000;
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.64px;
+}
+
+.contact__desc {
+    color: #494949;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.8; /* 186.667% */
+    letter-spacing: 0.3px;
+    max-width: 625px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+}
+
+.contact__row {
+    margin-top: 72px;
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-between;
+}
+
+.contact__column {
+    display: flex;
+    column-gap: 12px;
+    width: 22%;
+}
+
+.contact__column:last-child {
+    width: 25%;
+}
+
+.contact__column-heading {
+    color: #192122;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.36px;
+    margin-bottom: 16px;
+}
+
+.contact__column-item {
+    color: #494949;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.57; /* 157.143% */
+    letter-spacing: 0.28px;
+    margin-bottom: 8px;
+}
+
+.contact__column-item a {
+    color: #000;
+    font-weight: 500;
+}
+
+.contact__map {
+    width: 100%;
+    height: 548px;
+    margin-top: 60px;
+}
+
+.contact__map-frame {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.contact__form {
+    margin-top: 60px;
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact__form-heading {
+    color: #000;
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.64px;
+    max-width: 755px;
+    margin: 0 auto;
+    margin-bottom: 53px;
+}
+
+.contact__form-row {
+    column-gap: 44px;
+}
+
+.contact__form-group {
+    margin-top: 30px;
+}
+
+.form-control.contact__form-control {
+    height: 160px;
+}
+
+.form-control.contact__form-control .form-input {
+    height: 100%;
+    resize: none;
+}
+
+.contact__form-submit {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.submit-form-btn.contact__form-submit-btn {
+    display: inline-flex;
+    width: auto;
+    min-width: 160px;
+    justify-content: center;
+}

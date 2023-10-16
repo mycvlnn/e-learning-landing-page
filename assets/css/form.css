@@ -1,0 +1,225 @@
+/* Css liên quan đến form login, sign up */
+
+.form-title {
+    color: #252525;
+    text-align: center;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.64px;
+    text-transform: capitalize;
+}
+
+.login__content {
+    max-width: 470px;
+    padding: 32px 50px 44px;
+}
+
+.form-desc {
+    margin-top: 8px;
+    color: #9b9b9b;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.28px;
+}
+
+.login__desc {
+    margin-bottom: 28px;
+}
+
+.form-link {
+    color: #252525;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.form-link:hover {
+    color: var(--primary-color);
+}
+
+.form-label {
+    color: #2f3a3b;
+    font-family: Montserrat;
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-control {
+    padding: 20px;
+    border-radius: 6px;
+    background: #f2f2f2;
+    height: 58px;
+    position: relative;
+}
+
+.form-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+}
+
+.form-input__slot {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.form-input::placeholder {
+    color: #9b9b9b;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.form-group__btn {
+    display: flex;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.login__row {
+    justify-content: space-between;
+}
+
+.form-checkbox__control {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #989898;
+    border-radius: 2px;
+    background-color: #f8f8f8;
+}
+
+.form-checkbox__label {
+    color: #9b9b9b;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    margin-left: 8px;
+}
+
+.forgot-password {
+    text-decoration: underline;
+    color: #2f3a3b;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    text-decoration-color: #9b9b9b;
+    text-underline-offset: 4px;
+    transition: 0.3s;
+}
+
+.forgot-password:hover {
+    color: var(--primary-color);
+    text-decoration-color: inherit;
+}
+
+.submit-form-btn {
+    width: 100%;
+    margin-top: 30px;
+    display: block;
+    border-radius: 6px;
+    background: #2ac9bf;
+    padding: 0 20px;
+    text-align: center;
+    line-height: 50px;
+    border: none;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-form-btn:hover {
+    opacity: 0.8;
+}
+
+.login__with {
+    display: flex;
+    align-items: center;
+    color: #9b9b9b;
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 28px;
+    column-gap: 15px;
+    margin-bottom: 14px;
+}
+
+.login__with::before,
+.login__with::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: rgba(155, 155, 155, 0.25);
+}
+
+.authen-platform {
+    column-gap: 30px;
+}
+
+.authen-platform__btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 12px;
+    border-radius: 6px;
+    border: 1px solid rgba(155, 155, 155, 0.25);
+    background-color: #fff;
+    cursor: pointer;
+    color: #252525;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.28px;
+    transition: 0.3s;
+}
+
+.authen-platform__btn:hover {
+    opacity: 0.5;
+}
+
+/* Sign up */
+
+.signup__content {
+    max-width: 700px;
+    width: 700px;
+    padding: 50px;
+}
+
+.signup__desc {
+    margin-bottom: 30px;
+}
+
+.form-row {
+    display: flex;
+    column-gap: 32px;
+}
+
+.form-row + .form-row {
+    margin-top: 36px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.signup__policy {
+    margin-top: 36px;
+    margin-bottom: 6px;
+}

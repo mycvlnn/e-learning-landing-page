@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>E-Learning</title>
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png" />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- reset css -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+
+        <!-- font -->
+        <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+
+        <!-- css -->
+        <link rel="stylesheet" href="./assets/css/base.css" />
+        <link rel="stylesheet" href="./assets/css/header.css" />
+        <link rel="stylesheet" href="./assets/css/footer.css" />
+        <link rel="stylesheet" href="./assets/css/breadcrumb.css" />
+        <link rel="stylesheet" href="./assets/css/courses.css" />
+        <link rel="stylesheet" href="./assets/css/modal.css" />
+        <link rel="stylesheet" href="./assets/css/form.css" />
+    </head>
+    <body>
+        <!-- Header section -->
+        <header class="header">
+            <div class="container large">
+                <a href="#" class="logo">
+                    <img src="./assets/icon/logo.svg" alt="Besnik" />
+                </a>
+
+                <!-- Top Search -->
+                <div class="top-search">
+                    <input
+                        id="top-search"
+                        type="text"
+                        class="top-search__input"
+                        placeholder="Search..."
+                    />
+                    <label for="top-search" class="top-search__slot">
+                        <img
+                            src="./assets/icon/search.svg"
+                            alt="search-icon"
+                            class="top-search__icon"
+                        />
+                    </label>
+                </div>
+
+                <!-- Navbar  -->
+                <nav class="navbar">
+                    <ul class="list">
+                        <li class="item">
+                            <a href="/index.html" class="link">Home</a>
+                        </li>
+                        <li class="item">
+                            <a href="./features.html" class="link">Features</a>
+                        </li>
+                        <li class="item active">
+                            <a href="#" class="link">Courses</a>
+                        </li>
+                        <li class="item">
+                            <a href="./about.html" class="link">About</a>
+                        </li>
+                        <li class="item">
+                            <a href="./contact.html" class="link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="actions">
+                    <!-- Cart -->
+                    <div class="cart">
+                        <span class="cart__badge">4</span>
+                        <img src="./assets/icon/cart.svg" alt="cart-icon" class="cart__icon" />
+
+                        <!-- Popup cart -->
+                        <div class="cart__popper">
+                            <!-- Cart list -->
+                            <div class="cart-list">
+                                <!-- Cart item 1 -->
+                                <a href="#!" class="cart-item">
+                                    <img
+                                        src="./assets/img/cart-item-1.png"
+                                        alt="Awesome for Websites"
+                                        class="cart-item__img"
+                                    />
+                                    <div class="cart-item__content">
+                                        <h3 class="cart-item__name line-number line-clamp-1">
+                                            Awesome for Websites
+                                        </h3>
+                                        <div class="cart-item__pricing row">
+                                            <span class="cart-item__quantity">1 x </span>
+                                            <b class="cart-item__price">$49.00</b>
+                                        </div>
+                                    </div>
+                                    <button class="cart-item__clear">
+                                        <svg
+                                            class="cart-item__clear-icon"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="12"
+                                            height="12"
+                                            viewBox="0 0 12 12"
+                                            fill="none"
+                                        >
+                                            <g clip-path="url(#clip0_121_270)">
+                                                <path
+                                                    d="M7.09936 6.00975L11.772 1.33703C12.0761 1.03309 12.0761 0.541635 11.772 0.237725C11.4681 -0.0662209 10.9766 -0.0662209 10.6727 0.237725L5.99995 4.9104L1.32738 0.237725C1.02328 -0.0662209 0.532015 -0.0662209 0.228069 0.237725C-0.0760229 0.541671 -0.0760229 1.03309 0.228069 1.33703L4.9006 6.00975L0.228105 10.6824C-0.0759865 10.9864 -0.0759865 11.4778 0.228105 11.7817C0.300203 11.854 0.385876 11.9114 0.480204 11.9505C0.574531 11.9896 0.675653 12.0096 0.777759 12.0095C0.976745 12.0095 1.1758 11.9333 1.32741 11.7817L5.99995 7.10906L10.6727 11.7817C10.7448 11.854 10.8305 11.9114 10.9248 11.9505C11.0191 11.9895 11.1202 12.0096 11.2224 12.0095C11.4213 12.0095 11.6204 11.9333 11.772 11.7817C12.0761 11.4778 12.0761 10.9864 11.772 10.6824L7.09936 6.00975Z"
+                                                    fill="currentColor"
+                                                />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_121_270">
+                                                    <rect width="12" height="12" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <!-- <img
+                                            src="./assets/icon/clear.svg"
+                                            alt="clear icon"
+                                            class="cart-item__clear-icon"
+                                        /> -->
+                                    </button>
+                                </a>
+
+                                <!-- Cart item 2 -->
+                                <a href="#!" class="cart-item">
+                                    <img
+                                        src="./assets/img/cart-item-2.png"
+                                        alt="Successful Negotiati"
+                                        class="cart-item__img"
+                                    />
+                                    <div class="cart-item__content">
+                                        <h3 class="cart-item__name line-number line-clamp-1">
+                                            Successful Negotiation: Master Your Negotiating Skills
+                                        </h3>
+                                        <div class="cart-item__pricing row">
+                                            <span class="cart-item__quantity">1 x </span>
+                                            <b class="cart-item__price">$42.00</b>
+                                        </div>
+                                    </div>
+                                    <!-- Clear icon -->
+                                    <button class="cart-item__clear">
+                                        <svg
+                                            class="cart-item__clear-icon"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="12"
+                                            height="12"
+                                            viewBox="0 0 12 12"
+                                            fill="none"
+                                        >
+                                            <g clip-path="url(#clip0_121_270)">
+                                                <path
+                                                    d="M7.09936 6.00975L11.772 1.33703C12.0761 1.03309 12.0761 0.541635 11.772 0.237725C11.4681 -0.0662209 10.9766 -0.0662209 10.6727 0.237725L5.99995 4.9104L1.32738 0.237725C1.02328 -0.0662209 0.532015 -0.0662209 0.228069 0.237725C-0.0760229 0.541671 -0.0760229 1.03309 0.228069 1.33703L4.9006 6.00975L0.228105 10.6824C-0.0759865 10.9864 -0.0759865 11.4778 0.228105 11.7817C0.300203 11.854 0.385876 11.9114 0.480204 11.9505C0.574531 11.9896 0.675653 12.0096 0.777759 12.0095C0.976745 12.0095 1.1758 11.9333 1.32741 11.7817L5.99995 7.10906L10.6727 11.7817C10.7448 11.854 10.8305 11.9114 10.9248 11.9505C11.0191 11.9895 11.1202 12.0096 11.2224 12.0095C11.4213 12.0095 11.6204 11.9333 11.772 11.7817C12.0761 11.4778 12.0761 10.9864 11.772 10.6824L7.09936 6.00975Z"
+                                                    fill="currentColor"
+                                                />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_121_270">
+                                                    <rect width="12" height="12" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                </a>
+
+                                <!-- Cart item 3 -->
+                                <a href="#!" class="cart-item">
+                                    <img
+                                        src="./assets/img/cart-item-3.png"
+                                        alt="Consulting Approach to Problem Solving"
+                                        class="cart-item__img"
+                                    />
+                                    <div class="cart-item__content">
+                                        <h3 class="cart-item__name line-number line-clamp-1">
+                                            Consulting Approach to Problem Solving
+                                        </h3>
+                                        <div class="cart-item__pricing row">
+                                            <span class="cart-item__quantity">1 x </span>
+                                            <b class="cart-item__price">$60.00</b>
+                                        </div>
+                                    </div>
+                                    <!-- Clear icon -->
+                                    <button class="cart-item__clear">
+                                        <svg
+                                            class="cart-item__clear-icon"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="12"
+                                            height="12"
+                                            viewBox="0 0 12 12"
+                                            fill="none"
+                                        >
+                                            <g clip-path="url(#clip0_121_270)">
+                                                <path
+                                                    d="M7.09936 6.00975L11.772 1.33703C12.0761 1.03309 12.0761 0.541635 11.772 0.237725C11.4681 -0.0662209 10.9766 -0.0662209 10.6727 0.237725L5.99995 4.9104L1.32738 0.237725C1.02328 -0.0662209 0.532015 -0.0662209 0.228069 0.237725C-0.0760229 0.541671 -0.0760229 1.03309 0.228069 1.33703L4.9006 6.00975L0.228105 10.6824C-0.0759865 10.9864 -0.0759865 11.4778 0.228105 11.7817C0.300203 11.854 0.385876 11.9114 0.480204 11.9505C0.574531 11.9896 0.675653 12.0096 0.777759 12.0095C0.976745 12.0095 1.1758 11.9333 1.32741 11.7817L5.99995 7.10906L10.6727 11.7817C10.7448 11.854 10.8305 11.9114 10.9248 11.9505C11.0191 11.9895 11.1202 12.0096 11.2224 12.0095C11.4213 12.0095 11.6204 11.9333 11.772 11.7817C12.0761 11.4778 12.0761 10.9864 11.772 10.6824L7.09936 6.00975Z"
+                                                    fill="currentColor"
+                                                />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_121_270">
+                                                    <rect width="12" height="12" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                </a>
+                            </div>
+
+                            <!-- Cart footer -->
+                            <div class="cart-footer">
+                                <div class="cart-total">
+                                    <span class="cart-total__label">Total:</span>
+                                    <b class="cart-total__money">$455.99</b>
+                                </div>
+
+                                <div class="cart-actions">
+                                    <button class="cart-actions__btn">View cart</button>
+                                    <button class="cart-actions__btn cart-actions__btn--primary">
+                                        Checkout
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <!-- Authen -->
+                    <a href="#!" class="sign-in" id="loginBtn">Sign in</a>
+                    <a href="#!" class="sign-up btn-outlined" id="signupBtn">Sign up</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Breadcrumb: mảng điều hướng -->
+        <section class="container breadcrumb-section">
+            <ul class="breadcrumb">
+                <li class="breadcrumb__item">
+                    <a href="/" class="breadcrumb__link">Home</a>
+                </li>
+                <li class="breadcrumb__item breadcrumb__item--active">
+                    <a href="/" class="breadcrumb__link">Courses</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Main section-->
+        <main>
+            <!-- Courses -->
+            <section class="courses">
+                <div class="container">
+                    <h1 class="courses__heading">Courses list</h1>
+
+                    <section class="courses__list">
+                        <!-- Course item 1 -->
+                        <article class="course-item">
+                            <a href="./course-detail.html">
+                                <img
+                                    src="./assets/img/course-item-1.png"
+                                    alt="Successful Negotiation: Master Your Negotiating Skills"
+                                    class="course-item__thumb"
+                                />
+                            </a>
+
+                            <section class="course-item__content">
+                                <a href="./course-detail.html">
+                                    <h3 class="course-item__name line-number line-clamp-1">
+                                        Successful Negotiation: Master Your Negotiating Skills
+                                    </h3>
+                                </a>
+                                <ul class="course-item__spec-list">
+                                    <li class="course-item__spect-item">
+                                        <img
+                                            src="./assets/icon/courses/play.svg"
+                                            alt=""
+                                            class="course-item__spect-icon"
+                                        />
+                                        5 Lessons
+                                    </li>
+
+                                    <li class="course-item__spect-item">
+                                        <img
+                                            src="./assets/icon/courses/clock.svg"
+                                            alt=""
+                                            class="course-item__spect-icon"
+                                        />
+                                        2.3 hours
+                                    </li>
+
+                                    <li class="course-item__spect-item">
+                                        <img
+                                            src="./assets/icon/courses/filter.svg"
+                                            alt=""
+                                            class="course-item__spect-icon"
+                                        />
+                                        All Levels
+                                    </li>
+                                </ul>
+
+                                <p class="course-item__desc line-number line-clamp-1">
+                                    Negotiation is a skill well worth mastering - by putting
+                                </p>
+
+                                <div class="course-item__actions">
+                                    <button class="course-item__btn">Add to cart</button>
+                                    <button class="course-item__favorite">
+                                        <img
+                                            src="./assets/icon/courses/hearts.svg"
+                                            alt=""
+                                            class="course-item__favorite-icon"
+                                        />
+                                    </button>
+                                </div>
+                            </section>
+
+                            <div class="course-item__info">
+                                <b class="course-item__price"><span>42</span>.00</b>
+                                <div class="course-item__rating">
+                                    <div class="course-item__rating-row">
+                                        <div class="course-item__stars">
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                        </div>
+
+                                        <div class="course-item__start-rate">
+                                            5.0 / <span>5</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="course-item__rating-num">(2 ratings)</div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Course item 2 -->
+                        <article class="course-item">
+                            <a href="./course-detail.html">
+                                <img
+                                    src="./assets/img/course-item-2.png"
+                                    alt="Time Management Mastery: Do More, Stress Less"
+                                    class="course-item__thumb"
+                                />
+                            </a>
+
+                            <section class="course-item__content">
+                                <a href="./course-detail.html">
+                                    <h3 class="course-item__name line-number line-clamp-1">
+                                        Time Management Mastery: Do More, Stress Less
+                                    </h3>
+                                </a>
+                                <ul class="course-item__spec-list">
+                                    <li class="course-item__spect-item">
+                                        <img
+                                            src="./assets/icon/courses/play.svg"
+                                            alt=""
+                                            class="course-item__spect-icon"
+                                        />
+                                        7 Lessons
+                                    </li>
+
+                                    <li class="course-item__spect-item">
+                                        <img
+                                            src="./assets/icon/courses/clock.svg"
+                                            alt=""
+                                            class="course-item__spect-icon"
+                                        />
+                                        3.5 hours
+                                    </li>
+
+                                    <li class="course-item__spect-item">
+                                        <img
+                                            src="./assets/icon/courses/filter.svg"
+                                            alt=""
+                                            class="course-item__spect-icon"
+                                        />
+                                        All Levels
+                                    </li>
+                                </ul>
+
+                                <p class="course-item__desc line-number line-clamp-1">
+                                    If you’re someone who has a LOT on their plate hhh
+                                </p>
+
+                                <div class="course-item__actions">
+                                    <button class="course-item__btn">Add to cart</button>
+                                    <button class="course-item__favorite">
+                                        <img
+                                            src="./assets/icon/courses/hearts.svg"
+                                            alt=""
+                                            class="course-item__favorite-icon"
+                                        />
+                                    </button>
+                                </div>
+                            </section>
+
+                            <div class="course-item__info">
+                                <b class="course-item__price"><span>29</span>.00</b>
+                                <div class="course-item__rating">
+                                    <div class="course-item__rating-row">
+                                        <div class="course-item__stars">
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                        </div>
+
+                                        <div class="course-item__start-rate">
+                                            5.0 / <span>5</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="course-item__rating-num">(2 ratings)</div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Course item 3 -->
+                        <article class="course-item">
+                            <a href="./course-detail.html">
+                                <img
+                                    src="./assets/img/course-item-3.png"
+                                    alt="Angular - The Complete Guide (2020 Edition)"
+                                    class="course-item__thumb"
+                                />
+                            </a>
+
+                            <section class="course-item__content">
+                                <a href="./course-detail.html">
+                                    <h3 class="course-item__name line-number line-clamp-1">
+                                        Angular - The Complete Guide (2020 Edition)
+                                    </h3>
+                                </a>
+                                <ul class="course-item__spec-list">
+                                    <li class="course-item__spect-item">
+                                        <img
+                                            src="./assets/icon/courses/play.svg"
+                                            alt=""
+                                            class="course-item__spect-icon"
+                                        />
+                                        7 Lessons
+                                    </li>
+
+                                    <li class="course-item__spect-item">
+                                        <img
+                                            src="./assets/icon/courses/clock.svg"
+                                            alt=""
+                                            class="course-item__spect-icon"
+                                        />
+                                        3.5 hours
+                                    </li>
+
+                                    <li class="course-item__spect-item">
+                                        <img
+                                            src="./assets/icon/courses/filter.svg"
+                                            alt=""
+                                            class="course-item__spect-icon"
+                                        />
+                                        All Levels
+                                    </li>
+                                </ul>
+
+                                <p class="course-item__desc line-number line-clamp-1">
+                                    From Setup to Deployment, this course covers it all! Your’ll
+                                    learn all about
+                                </p>
+
+                                <div class="course-item__actions">
+                                    <button class="course-item__btn">Add to cart</button>
+                                    <button class="course-item__favorite">
+                                        <img
+                                            src="./assets/icon/courses/hearts.svg"
+                                            alt=""
+                                            class="course-item__favorite-icon"
+                                        />
+                                    </button>
+                                </div>
+                            </section>
+
+                            <div class="course-item__info">
+                                <b class="course-item__price"><span>50</span>.00</b>
+                                <div class="course-item__rating">
+                                    <div class="course-item__rating-row">
+                                        <div class="course-item__stars">
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                        </div>
+
+                                        <div class="course-item__start-rate">
+                                            4.0 / <span>5</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="course-item__rating-num">(100 ratings)</div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Course item 4 -->
+                        <article class="course-item">
+                            <a href="./course-detail.html">
+                                <img
+                                    src="./assets/img/course-item-4.png"
+                                    alt="Consulting Approach to Problem Solving"
+                                    class="course-item__thumb"
+                                />
+                            </a>
+
+                            <section class="course-item__content">
+                                <a href="./course-detail.html">
+                                    <h3 class="course-item__name line-number line-clamp-1">
+                                        Consulting Approach to Problem Solving
+                                    </h3>
+                                </a>
+                                <ul class="course-item__spec-list">
+                                    <li class="course-item__spect-item">
+                                        <img
+                                            src="./assets/icon/courses/play.svg"
+                                            alt=""
+                                            class="course-item__spect-icon"
+                                        />
+                                        7 Lessons
+                                    </li>
+
+                                    <li class="course-item__spect-item">
+                                        <img
+                                            src="./assets/icon/courses/clock.svg"
+                                            alt=""
+                                            class="course-item__spect-icon"
+                                        />
+                                        3.5 hours
+                                    </li>
+
+                                    <li class="course-item__spect-item">
+                                        <img
+                                            src="./assets/icon/courses/filter.svg"
+                                            alt=""
+                                            class="course-item__spect-icon"
+                                        />
+                                        All Levels
+                                    </li>
+                                </ul>
+
+                                <p class="course-item__desc line-number line-clamp-1">
+                                    Consulting Approach to Problem Solving
+                                </p>
+
+                                <div class="course-item__actions">
+                                    <button class="course-item__btn">Add to cart</button>
+                                    <button class="course-item__favorite">
+                                        <img
+                                            src="./assets/icon/courses/hearts.svg"
+                                            alt=""
+                                            class="course-item__favorite-icon"
+                                        />
+                                    </button>
+                                </div>
+                            </section>
+
+                            <div class="course-item__info">
+                                <b class="course-item__price"><span>30</span>.00</b>
+                                <div class="course-item__rating">
+                                    <div class="course-item__rating-row">
+                                        <div class="course-item__stars">
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                        </div>
+
+                                        <div class="course-item__start-rate">
+                                            4.1 / <span>20</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="course-item__rating-num">(10 ratings)</div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Course item 5 -->
+                        <article class="course-item">
+                            <a href="./course-detail.html">
+                                <img
+                                    src="./assets/img/course-item-5.png"
+                                    alt="Consulting Approach to Problem Solving"
+                                    class="course-item__thumb"
+                                />
+                            </a>
+
+                            <section class="course-item__content">
+                                <a href="./course-detail.html">
+                                    <h3 class="course-item__name line-number line-clamp-1">
+                                        Consulting Approach to Problem Solving
+                                    </h3>
+                                </a>
+                                <ul class="course-item__spec-list">
+                                    <li class="course-item__spect-item">
+                                        <img
+                                            src="./assets/icon/courses/play.svg"
+                                            alt=""
+                                            class="course-item__spect-icon"
+                                        />
+                                        7 Lessons
+                                    </li>
+
+                                    <li class="course-item__spect-item">
+                                        <img
+                                            src="./assets/icon/courses/clock.svg"
+                                            alt=""
+                                            class="course-item__spect-icon"
+                                        />
+                                        3.5 hours
+                                    </li>
+
+                                    <li class="course-item__spect-item">
+                                        <img
+                                            src="./assets/icon/courses/filter.svg"
+                                            alt=""
+                                            class="course-item__spect-icon"
+                                        />
+                                        All Levels
+                                    </li>
+                                </ul>
+
+                                <p class="course-item__desc line-number line-clamp-1">
+                                    Consulting Approach to Problem Solving
+                                </p>
+
+                                <div class="course-item__actions">
+                                    <button class="course-item__btn">Add to cart</button>
+                                    <button class="course-item__favorite">
+                                        <img
+                                            src="./assets/icon/courses/hearts.svg"
+                                            alt=""
+                                            class="course-item__favorite-icon"
+                                        />
+                                    </button>
+                                </div>
+                            </section>
+
+                            <div class="course-item__info">
+                                <b class="course-item__price"><span>30</span>.00</b>
+                                <div class="course-item__rating">
+                                    <div class="course-item__rating-row">
+                                        <div class="course-item__stars">
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                        </div>
+
+                                        <div class="course-item__start-rate">
+                                            4.1 / <span>20</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="course-item__rating-num">(10 ratings)</div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Course item 6 -->
+                        <article class="course-item">
+                            <a href="./course-detail.html">
+                                <img
+                                    src="./assets/img/course-item-6.png"
+                                    alt="The Business Intelligence Analyst Course 2020"
+                                    class="course-item__thumb"
+                                />
+                            </a>
+
+                            <section class="course-item__content">
+                                <a href="./course-detail.html">
+                                    <h3 class="course-item__name line-number line-clamp-1">
+                                        The Business Intelligence Analyst Course 2020
+                                    </h3>
+                                </a>
+                                <ul class="course-item__spec-list">
+                                    <li class="course-item__spect-item">
+                                        <img
+                                            src="./assets/icon/courses/play.svg"
+                                            alt=""
+                                            class="course-item__spect-icon"
+                                        />
+                                        7 Lessons
+                                    </li>
+
+                                    <li class="course-item__spect-item">
+                                        <img
+                                            src="./assets/icon/courses/clock.svg"
+                                            alt=""
+                                            class="course-item__spect-icon"
+                                        />
+                                        3.5 hours
+                                    </li>
+
+                                    <li class="course-item__spect-item">
+                                        <img
+                                            src="./assets/icon/courses/filter.svg"
+                                            alt=""
+                                            class="course-item__spect-icon"
+                                        />
+                                        All Levels
+                                    </li>
+                                </ul>
+
+                                <p class="course-item__desc line-number line-clamp-1">
+                                    Our program is different than the rest of the materials …
+                                </p>
+
+                                <div class="course-item__actions">
+                                    <button class="course-item__btn">Add to cart</button>
+                                    <button class="course-item__favorite">
+                                        <img
+                                            src="./assets/icon/courses/hearts.svg"
+                                            alt=""
+                                            class="course-item__favorite-icon"
+                                        />
+                                    </button>
+                                </div>
+                            </section>
+
+                            <div class="course-item__info">
+                                <b class="course-item__price"><span>30</span>.00</b>
+                                <div class="course-item__rating">
+                                    <div class="course-item__rating-row">
+                                        <div class="course-item__stars">
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                        </div>
+
+                                        <div class="course-item__start-rate">
+                                            4.1 / <span>20</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="course-item__rating-num">(21 ratings)</div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Course item 7 -->
+                        <article class="course-item">
+                            <a href="./course-detail.html">
+                                <img
+                                    src="./assets/img/course-item-7.png"
+                                    alt="Mechanical Engineering and Electrical Engineering Explained"
+                                    class="course-item__thumb"
+                                />
+                            </a>
+
+                            <section class="course-item__content">
+                                <a href="./course-detail.html">
+                                    <h3 class="course-item__name line-number line-clamp-1">
+                                        Mechanical Engineering and Electrical Engineering Explained
+                                    </h3>
+                                </a>
+                                <ul class="course-item__spec-list">
+                                    <li class="course-item__spect-item">
+                                        <img
+                                            src="./assets/icon/courses/play.svg"
+                                            alt=""
+                                            class="course-item__spect-icon"
+                                        />
+                                        10 Lessons
+                                    </li>
+
+                                    <li class="course-item__spect-item">
+                                        <img
+                                            src="./assets/icon/courses/clock.svg"
+                                            alt=""
+                                            class="course-item__spect-icon"
+                                        />
+                                        4.5 hours
+                                    </li>
+
+                                    <li class="course-item__spect-item">
+                                        <img
+                                            src="./assets/icon/courses/filter.svg"
+                                            alt=""
+                                            class="course-item__spect-icon"
+                                        />
+                                        All Levels
+                                    </li>
+                                </ul>
+
+                                <p class="course-item__desc line-number line-clamp-1">
+                                    Electronics has become important to many fields; communications,
+                                    automotive, security,
+                                </p>
+
+                                <div class="course-item__actions">
+                                    <button class="course-item__btn">Add to cart</button>
+                                    <button class="course-item__favorite">
+                                        <img
+                                            src="./assets/icon/courses/hearts.svg"
+                                            alt=""
+                                            class="course-item__favorite-icon"
+                                        />
+                                    </button>
+                                </div>
+                            </section>
+
+                            <div class="course-item__info">
+                                <b class="course-item__price"><span>30</span>.00</b>
+                                <div class="course-item__rating">
+                                    <div class="course-item__rating-row">
+                                        <div class="course-item__stars">
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                        </div>
+
+                                        <div class="course-item__start-rate">
+                                            4.1 / <span>20</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="course-item__rating-num">(21 ratings)</div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Course item 8 -->
+                        <article class="course-item">
+                            <a href="./course-detail.html">
+                                <img
+                                    src="./assets/img/course-item-8.png"
+                                    alt="Learn Algebra The Easy Way!"
+                                    class="course-item__thumb"
+                                />
+                            </a>
+
+                            <section class="course-item__content">
+                                <a href="./course-detail.html">
+                                    <h3 class="course-item__name line-number line-clamp-1">
+                                        Learn Algebra The Easy Way!
+                                    </h3>
+                                </a>
+                                <ul class="course-item__spec-list">
+                                    <li class="course-item__spect-item">
+                                        <img
+                                            src="./assets/icon/courses/play.svg"
+                                            alt=""
+                                            class="course-item__spect-icon"
+                                        />
+                                        10 Lessons
+                                    </li>
+
+                                    <li class="course-item__spect-item">
+                                        <img
+                                            src="./assets/icon/courses/clock.svg"
+                                            alt=""
+                                            class="course-item__spect-icon"
+                                        />
+                                        4.5 hours
+                                    </li>
+
+                                    <li class="course-item__spect-item">
+                                        <img
+                                            src="./assets/icon/courses/filter.svg"
+                                            alt=""
+                                            class="course-item__spect-icon"
+                                        />
+                                        All Levels
+                                    </li>
+                                </ul>
+
+                                <p class="course-item__desc line-number line-clamp-1">
+                                    This course will begin with an overview of data types …
+                                </p>
+
+                                <div class="course-item__actions">
+                                    <button class="course-item__btn">Add to cart</button>
+                                    <button class="course-item__favorite">
+                                        <img
+                                            src="./assets/icon/courses/hearts.svg"
+                                            alt=""
+                                            class="course-item__favorite-icon"
+                                        />
+                                    </button>
+                                </div>
+                            </section>
+
+                            <div class="course-item__info">
+                                <b class="course-item__price"><span>30</span>.00</b>
+                                <div class="course-item__rating">
+                                    <div class="course-item__rating-row">
+                                        <div class="course-item__stars">
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                            <img
+                                                src="./assets/icon/courses/star.svg"
+                                                alt=""
+                                                class="course-item__star"
+                                            />
+                                        </div>
+
+                                        <div class="course-item__start-rate">
+                                            4.1 / <span>20</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="course-item__rating-num">(21 ratings)</div>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+
+                    <!-- Pagination -->
+                    <div class="courses__pagination">
+                        <button class="courses__paging courses__paging--active">1</button>
+                        <button class="courses__paging">2</button>
+                        <button class="courses__paging">...</button>
+                        <button class="courses__paging">
+                            <img
+                                src="./assets/icon/courses/next-page.svg"
+                                alt=""
+                                class="courses__next-page"
+                            />
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer section -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <img src="./assets/icon/logo.svg" alt="Besnik" class="logo" />
+                    </div>
+                    <div class="col">
+                        <h3 class="title">Company</h3>
+                        <ul class="list">
+                            <li class="item">
+                                <a href="#!">About</a>
+                            </li>
+                            <li class="item">
+                                <a href="#!">Careers</a>
+                            </li>
+                            <li class="item">
+                                <a href="#!">Press</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3 class="title">Community</h3>
+                        <ul class="list">
+                            <li class="item">
+                                <a href="#!">Team Plans</a>
+                            </li>
+                            <li class="item">
+                                <a href="#!">Blog</a>
+                            </li>
+                            <li class="item">
+                                <a href="#!">Students</a>
+                            </li>
+                            <li class="item">
+                                <a href="#!">Schoolarships</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3 class="title">Teaching</h3>
+                        <ul class="list">
+                            <li class="item">
+                                <a href="#!">Become a teacher</a>
+                            </li>
+                            <li class="item">
+                                <a href="#!">Teaching academy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3 class="title">Be social</h3>
+                        <ul class="list">
+                            <li class="item">
+                                <a href="#!">
+                                    <div class="icon">
+                                        <img src="./assets/icon/twitter.svg" alt="" />
+                                    </div>
+                                    <span>Twitter</span>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="#!">
+                                    <div class="icon">
+                                        <img src="./assets/icon/facebook.svg" alt="" />
+                                    </div>
+                                    <span>Facebook</span>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="#!">
+                                    <div class="icon">
+                                        <img src="./assets/icon/instagram.svg" alt="" />
+                                    </div>
+                                    <span>Instagram</span>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="#!">
+                                    <div class="icon">
+                                        <img src="./assets/icon/linkedin.svg" alt="" />
+                                    </div>
+                                    <span>Linkedin</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="copyright">© Copyright 2020 by Mayad Ahmed. All right reserved.</p>
+            </div>
+        </footer>
+
+        <!-- Modal -->
+        <!-- Login -->
+        <div id="login" class="modal login">
+            <div class="modal-content login__content">
+                <button id="closeModalBtn" class="close login__close">
+                    <img src="./assets/icon/close.svg" alt="close btn" />
+                </button>
+                <form class="login__form">
+                    <h2 class="form-title">Log In</h2>
+                    <p class="form-desc login__desc">
+                        Don’t have an account yet?
+                        <a href="#!" class="form-link">Sign up for free</a>
+                    </p>
+
+                    <div class="form-group">
+                        <label for="username-email" class="form-label">USERNAME OR EMAIL</label>
+                        <div class="form-control">
+                            <input
+                                id="username-email"
+                                type="text"
+                                class="form-input"
+                                placeholder="Your username or email"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="form-group mt-24">
+                        <label for="password" class="form-label">PASSWORD</label>
+                        <div class="form-control">
+                            <input
+                                id="password"
+                                type="password"
+                                class="form-input"
+                                placeholder="Password"
+                            />
+                            <div class="form-input__slot">
+                                <button class="form-group__btn">
+                                    <img
+                                        src="./assets/icon/eye.svg"
+                                        alt="eye"
+                                        class="form-input__icon"
+                                    />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row login__row mt-24">
+                        <div class="form-checkbox row">
+                            <input
+                                type="checkbox"
+                                name="save-account"
+                                id="remember-me"
+                                class="form-checkbox__control"
+                            />
+                            <label for="remember-me" class="form-checkbox__label">
+                                Remember me
+                            </label>
+                        </div>
+
+                        <a href="#!" class="forgot-password">Forgot your password?</a>
+                    </div>
+
+                    <button type="submit" class="submit-form-btn">Log in</button>
+                    <p class="login__with">or Log-in with</p>
+
+                    <div class="authen-platform row">
+                        <button class="authen-platform__btn row">
+                            <img
+                                src="./assets/icon/facebook-icon.svg"
+                                alt="facebook"
+                                class="authen-platform__icon"
+                            />
+                            <b class="authen-platform__name">Facebook</b>
+                        </button>
+
+                        <button class="authen-platform__btn row">
+                            <img
+                                src="./assets/icon/google.svg"
+                                alt="facebook"
+                                class="authen-platform__icon"
+                            />
+                            <b class="authen-platform__name">Google</b>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Sign up -->
+        <div id="signup" class="modal signup">
+            <div class="modal-content signup__content">
+                <button id="closeModalSignupBtn" class="close">
+                    <img src="./assets/icon/close.svg" alt="close btn" />
+                </button>
+                <form class="login__form">
+                    <h2 class="form-title">Sign up</h2>
+                    <p class="form-desc signup__desc">
+                        Already have an account?
+                        <a href="#!" class="form-link">Log in</a>
+                    </p>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name" class="form-label">FIRST NAME</label>
+                            <div class="form-control">
+                                <input
+                                    id="first-name"
+                                    type="text"
+                                    class="form-input"
+                                    placeholder="First name"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="last-name" class="form-label">LAST NAME</label>
+                            <div class="form-control">
+                                <input
+                                    id="last-name"
+                                    type="text"
+                                    class="form-input"
+                                    placeholder="Last name"
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="user-name" class="form-label">USERNAME</label>
+                            <div class="form-control">
+                                <input
+                                    id="user-name"
+                                    type="text"
+                                    class="form-input"
+                                    placeholder="Username"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">EMAIL</label>
+                            <div class="form-control">
+                                <input
+                                    id="email"
+                                    type="email"
+                                    class="form-input"
+                                    placeholder="Your email"
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="password" class="form-label">PASSWORD</label>
+                            <div class="form-control">
+                                <input
+                                    id="password"
+                                    type="password"
+                                    class="form-input"
+                                    placeholder="Password"
+                                />
+                                <div class="form-input__slot">
+                                    <button class="form-group__btn">
+                                        <img
+                                            src="./assets/icon/eye.svg"
+                                            alt="eye"
+                                            class="form-input__icon"
+                                        />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password-confirmation" class="form-label">
+                                RE-ENTER PASSWORD
+                            </label>
+                            <div class="form-control">
+                                <input
+                                    id="password-confirmation"
+                                    type="password"
+                                    class="form-input"
+                                    placeholder="Re-Enter Password"
+                                />
+                                <div class="form-input__slot">
+                                    <button class="form-group__btn">
+                                        <img
+                                            src="./assets/icon/eye.svg"
+                                            alt="eye"
+                                            class="form-input__icon"
+                                        />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-checkbox row signup__policy">
+                        <input
+                            type="checkbox"
+                            name="save-account"
+                            id="accept-privacy"
+                            class="form-checkbox__control"
+                        />
+                        <label for="accept-privacy" class="form-checkbox__label">
+                            Accept the Terms and Privacy Policy
+                        </label>
+                    </div>
+
+                    <button type="submit" class="submit-form-btn">Register</button>
+                </form>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
