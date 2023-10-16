@@ -1,5 +1,4 @@
 # E-learning landing page
 
 ## 1. Design
-
-[![N|Solid](https://cdn.worldvectorlogo.com/logos/figma-5.svg)](https://www.figma.com/file/SOp20jxs7GYWrmlZC1OuG4/2.1.-Online-Learning-Landing-Page?node-id=5-2&t=tPbC2WlCgsjbt3MY-0)
+https://www.figma.com/file/v0biYeLh58bJYXsftczAFN/E-learning-landing-page-(renew-ui)?type=design&node-id=268%3A523&mode=dev
